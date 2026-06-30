@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Admin Panel - Manage Profiles</h2>
+        <a href="index.html" class="nav-link">View Public Directory</a>
+        
+        <form id="profileForm">
+            <input type="text" id="name" placeholder="Enter Full Name" required>
+            <input type="text" id="avatar" placeholder="Paste Image URL (Optional)">
+            <textarea id="bio" placeholder="Write a short biography..." required></textarea>
+            <button type="submit">Save Profile</button>
+        </form>
+
+        <h3>Existing Profiles</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Bio</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="adminTableBody">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
